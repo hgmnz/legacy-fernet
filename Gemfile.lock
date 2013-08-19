@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    legacy-fernet (1.6.1)
+    legacy-fernet (1.6.2)
       multi_json
 
 GEM
