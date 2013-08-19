@@ -15,7 +15,7 @@ Gem::Specification.new do |gem|
   gem.require_paths = ["lib"]
   gem.version       = Legacy::Fernet::VERSION
 
-  gem.add_dependency "yajl-ruby"
+  gem.add_dependency "oj"
   gem.add_dependency "multi_json"
 
   gem.add_development_dependency "rspec"
