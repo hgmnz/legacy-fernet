@@ -1,5 +1,5 @@
 require 'spec_helper'
-require 'fernet'
+require 'fernet/legacy'
 
 describe Fernet::Legacy do
   after { Fernet::Legacy::Configuration.run }
