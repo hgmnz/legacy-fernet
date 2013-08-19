@@ -13,10 +13,10 @@ Gem::Specification.new do |gem|
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.name          = "legacy-fernet"
   gem.require_paths = ["lib"]
-  gem.version       = Legacy::Fernet::VERSION
+  gem.version       = Fernet::Legacy::VERSION
 
-  gem.add_dependency "oj"
   gem.add_dependency "multi_json"
 
   gem.add_development_dependency "rspec"
+  gem.add_development_dependency "oj"
 end

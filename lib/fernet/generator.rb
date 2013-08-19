@@ -3,7 +3,7 @@ require 'multi_json'
 require 'openssl'
 require 'date'
 
-module Legacy::Fernet
+module Fernet::Legacy
   class Generator
     attr_accessor :data, :payload
 
@@ -30,7 +30,7 @@ module Legacy::Fernet
     end
 
     def inspect
-      "#<Legacy::Fernet::Generator @secret=[masked] @data=#{@data.inspect}>"
+      "#<Fernet::Legacy::Generator @secret=[masked] @data=#{@data.inspect}>"
     end
     alias to_s inspect
 

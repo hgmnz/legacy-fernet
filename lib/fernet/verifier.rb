@@ -3,7 +3,7 @@ require 'multi_json'
 require 'openssl'
 require 'date'
 
-module Legacy::Fernet
+module Fernet::Legacy
   class Verifier
     attr_reader :token, :data
     attr_accessor :ttl, :enforce_ttl
@@ -33,7 +33,7 @@ module Legacy::Fernet
     end
 
     def inspect
-      "#<Legacy::Fernet::Verifier @secret=[masked] @token=#{@token} @data=#{@data.inspect} @ttl=#{@ttl}>"
+      "#<Fernet::Legacy::Verifier @secret=[masked] @token=#{@token} @data=#{@data.inspect} @ttl=#{@ttl}>"
     end
     alias to_s inspect
 
