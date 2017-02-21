@@ -1,4 +1,7 @@
 source 'https://rubygems.org'
 
-# Specify your gem's dependencies in fernet.gemspec
 gemspec
+
+gem "oj",    "~> 2.18"
+gem "rake",  "~> 11.0"
+gem "rspec", "~> 2.11"
