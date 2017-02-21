@@ -46,7 +46,7 @@ module Fernet::Legacy
       cipher.encrypt
       iv         = cipher.random_iv
       cipher.iv  = iv
-      cipher.key = encryption_key
+      cipher.key = encryption_key[0, 16]
       @data = cipher.update(MultiJson.dump(data)) + cipher.final
       iv
     end
