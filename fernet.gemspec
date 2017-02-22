@@ -15,8 +15,5 @@ Gem::Specification.new do |gem|
   gem.require_paths = ["lib"]
   gem.version       = Fernet::Legacy::VERSION
 
-  gem.add_dependency "multi_json"
-
-  gem.add_development_dependency "rspec"
-  gem.add_development_dependency "oj"
+  gem.add_dependency "multi_json", "~> 1.0"
 end

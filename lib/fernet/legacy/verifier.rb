@@ -75,7 +75,7 @@ module Fernet::Legacy
       decipher = OpenSSL::Cipher.new('AES-128-CBC')
       decipher.decrypt
       decipher.iv  = iv
-      decipher.key = encryption_key
+      decipher.key = encryption_key[0, 16]
       decipher.update(Base64.urlsafe_decode64(encrypted_data)) + decipher.final
     end
 
